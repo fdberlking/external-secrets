@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../alibaba/">
+        <link rel="prev" href="../azure-key-vault/">
       
       
-        <link rel="next" href="../oracle-vault/">
+        <link rel="next" href="../conjur/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>GitLab Variables - External Secrets Operator</title>
+        <title>Chef - External Secrets Operator</title>
       
     
     
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#gitlab-variables" class="md-skip">
+        <a href="#chef" class="md-skip">
           Skip to content
         </a>
       
@@ -122,7 +122,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              GitLab Variables
+              Chef
             
           </span>
         </div>
@@ -1897,10 +1897,28 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../chef/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Chef
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -1909,6 +1927,84 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#chef" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chef
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chef">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#authentication" class="md-nav__link">
+    <span class="md-ellipsis">
+      Authentication
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-a-secret-containing-your-private-key" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create a secret containing your private key
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creating-clustersecretstore" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating ClusterSecretStore
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creating-secretstore" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating SecretStore
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creating-externalsecret" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating ExternalSecret
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -2107,28 +2203,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    GitLab Variables
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../gitlab-variables/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2137,99 +2215,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#gitlab-variables" class="md-nav__link">
-    <span class="md-ellipsis">
-      GitLab Variables
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="GitLab Variables">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#configuring-gitlab" class="md-nav__link">
-    <span class="md-ellipsis">
-      Configuring GitLab
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#access-token-secret" class="md-nav__link">
-    <span class="md-ellipsis">
-      Access Token secret
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#configuring-the-secret-store" class="md-nav__link">
-    <span class="md-ellipsis">
-      Configuring the secret store
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#creating-external-secret" class="md-nav__link">
-    <span class="md-ellipsis">
-      Creating external secret
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Creating external secret">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#using-datafrom" class="md-nav__link">
-    <span class="md-ellipsis">
-      Using DataFrom
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#getting-the-kubernetes-secret" class="md-nav__link">
-    <span class="md-ellipsis">
-      Getting the Kubernetes secret
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -2976,70 +2961,55 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#gitlab-variables" class="md-nav__link">
+  <a href="#chef" class="md-nav__link">
     <span class="md-ellipsis">
-      GitLab Variables
+      Chef
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="GitLab Variables">
+    <nav class="md-nav" aria-label="Chef">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#configuring-gitlab" class="md-nav__link">
+  <a href="#authentication" class="md-nav__link">
     <span class="md-ellipsis">
-      Configuring GitLab
+      Authentication
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#access-token-secret" class="md-nav__link">
+  <a href="#create-a-secret-containing-your-private-key" class="md-nav__link">
     <span class="md-ellipsis">
-      Access Token secret
+      Create a secret containing your private key
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#configuring-the-secret-store" class="md-nav__link">
+  <a href="#creating-clustersecretstore" class="md-nav__link">
     <span class="md-ellipsis">
-      Configuring the secret store
+      Creating ClusterSecretStore
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#creating-external-secret" class="md-nav__link">
+  <a href="#creating-secretstore" class="md-nav__link">
     <span class="md-ellipsis">
-      Creating external secret
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Creating external secret">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#using-datafrom" class="md-nav__link">
-    <span class="md-ellipsis">
-      Using DataFrom
+      Creating SecretStore
     </span>
   </a>
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-        
           <li class="md-nav__item">
-  <a href="#getting-the-kubernetes-secret" class="md-nav__link">
+  <a href="#creating-externalsecret" class="md-nav__link">
     <span class="md-ellipsis">
-      Getting the Kubernetes secret
+      Creating ExternalSecret
     </span>
   </a>
   
@@ -3068,102 +3038,135 @@
   
 
 
-  <h1>GitLab Variables</h1>
+  <h1>Chef</h1>
 
-<h2 id="gitlab-variables">GitLab Variables</h2>
-<p>External Secrets Operator integrates with GitLab to sync <a href="https://docs.gitlab.com/ee/api/project_level_variables.html">GitLab Project Variables API</a> and/or <a href="https://docs.gitlab.com/ee/api/group_level_variables.html">GitLab Group Variables API</a> to secrets held on the Kubernetes cluster.</p>
-<h3 id="configuring-gitlab">Configuring GitLab</h3>
-<p>The GitLab API requires an access token, project ID and/or groupIDs.</p>
-<p>To create a new access token, go to your user settings and select 'access tokens'. Give your token a name, expiration date, and select the permissions required (Note 'api' is required).</p>
-<p><img alt="token-details" src="../../pictures/screenshot_gitlab_token.png" /></p>
-<p>Click 'Create personal access token', and your token will be generated and displayed on screen. Copy or save this token since you can't access it again.
-<img alt="token-created" src="../../pictures/screenshot_gitlab_token_created.png" /></p>
-<h3 id="access-token-secret">Access Token secret</h3>
-<p>Create a secret containing your access token:</p>
-<div class="highlight"><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">v1</span>
-<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Secret</span>
+<h2 id="chef">Chef</h2>
+<p><code>Chef External Secrets provider</code> will enable users to seamlessly integrate their Chef-based secret management with Kubernetes through the existing External Secrets framework.</p>
+<p>In many enterprises, legacy applications and infrastructure are still tightly integrated with the Chef/Chef Infra Server/Chef Server Cluster for configuration and secrets management. Teams often rely on <a href="https://docs.chef.io/data_bags/">Chef data bags</a> to securely store sensitive information such as application secrets and infrastructure configurations. These data bags serve as a centralized repository for managing and distributing sensitive data across the Chef ecosystem.</p>
+<p><strong>NOTE:</strong> <code>Chef External Secrets provider</code> is designed only to fetch data from the Chef data bags into Kubernetes secrets, it won't update/delete any item in the data bags. </p>
+<h3 id="authentication">Authentication</h3>
+<p>Every request made to the Chef Infra server needs to be authenticated. <a href="https://docs.chef.io/server/auth/">Authentication</a> is done using the Private keys of the Chef Users.  The User needs to have appropriate <a href="https://docs.chef.io/server/server_orgs/#permissions">Permissions</a> to the data bags containing the data that they want to fetch using the External Secrets Operator.</p>
+<p>The following command can be used to create Chef Users:
+<div class="highlight"><pre><span></span><code>chef-server-ctl<span class="w"> </span>user-create<span class="w"> </span>USER_NAME<span class="w"> </span>FIRST_NAME<span class="w"> </span><span class="o">[</span>MIDDLE_NAME<span class="o">]</span><span class="w"> </span>LAST_NAME<span class="w"> </span>EMAIL<span class="w"> </span><span class="s1">&#39;PASSWORD&#39;</span><span class="w"> </span><span class="o">(</span>options<span class="o">)</span>
+</code></pre></div></p>
+<p>More details on the above command are available here <a href="https://docs.chef.io/server/server_users/#user-create">Chef User Create Option</a>. The above command will return the default private key (PRIVATE_KEY_VALUE), which we will use for authentication. Additionally, a Chef User with access to specific data bags, a private key pair with an expiration date can be created with the help of the  <a href="https://docs.chef.io/server/auth/#knife-user-key">knife user key</a> command.</p>
+<h3 id="create-a-secret-containing-your-private-key">Create a secret containing your private key</h3>
+<p>We need to store the above User's API key into a secret resource.
+Example:
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>create<span class="w"> </span>secret<span class="w"> </span>generic<span class="w"> </span>chef-user-secret<span class="w"> </span>-n<span class="w"> </span>vivid<span class="w"> </span>--from-literal<span class="o">=</span>user-private-key<span class="o">=</span><span class="s1">&#39;PRIVATE_KEY_VALUE&#39;</span>
+</code></pre></div></p>
+<h3 id="creating-clustersecretstore">Creating ClusterSecretStore</h3>
+<p>The Chef <code>ClusterSecretStore</code> is a cluster-scoped SecretStore that can be referenced by all Chef <code>ExternalSecrets</code> from all namespaces. You can follow the below example to create a <code>ClusterSecretStore</code> resource.</p>
+<div class="highlight"><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">external-secrets.io/v1beta1</span>
+<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ClusterSecretStore</span>
 <span class="nt">metadata</span><span class="p">:</span>
-<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">gitlab-secret</span>
-<span class="w">  </span><span class="nt">labels</span><span class="p">:</span><span class="w"> </span>
-<span class="w">    </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">gitlab</span>
-<span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Opaque</span><span class="w"> </span>
-<span class="nt">stringData</span><span class="p">:</span>
-<span class="w">  </span><span class="nt">token</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;**access</span><span class="nv"> </span><span class="s">token</span><span class="nv"> </span><span class="s">goes</span><span class="nv"> </span><span class="s">here**&quot;</span>
-</code></pre></div>
-<h3 id="configuring-the-secret-store">Configuring the secret store</h3>
-<p>Be sure the <code>gitlab</code> provider is listed in the <code>Kind=SecretStore</code> and the ProjectID is set. If you are not using <code>https://gitlab.com</code>, you must set the <code>url</code> field as well.</p>
-<p>In order to sync group variables <code>inheritFromGroups</code> must be true or <code>groupIDs</code> have to be defined.</p>
-<p>In case you have defined multiple environments in Gitlab, the secret store should be constrained to a specific <code>environment_scope</code>.</p>
-<p><div class="highlight"><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">external-secrets.io/v1beta1</span>
-<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">SecretStore</span>
-<span class="nt">metadata</span><span class="p">:</span>
-<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">gitlab-secret-store</span>
+<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">vivid-clustersecretstore</span><span class="w"> </span><span class="c1"># name of ClusterSecretStore</span>
 <span class="nt">spec</span><span class="p">:</span>
 <span class="w">  </span><span class="nt">provider</span><span class="p">:</span>
-<span class="w">    </span><span class="c1"># provider type: gitlab</span>
-<span class="w">    </span><span class="nt">gitlab</span><span class="p">:</span>
-<span class="w">      </span><span class="c1"># url: https://gitlab.mydomain.com/</span>
+<span class="w">    </span><span class="nt">chef</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">username</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">user</span><span class="w"> </span><span class="c1"># Chef User name</span>
+<span class="w">      </span><span class="nt">serverUrl</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://manage.chef.io/organizations/testuser/</span><span class="w"> </span><span class="c1"># Chef server URL</span>
 <span class="w">      </span><span class="nt">auth</span><span class="p">:</span>
-<span class="w">        </span><span class="nt">SecretRef</span><span class="p">:</span>
-<span class="w">          </span><span class="nt">accessToken</span><span class="p">:</span>
-<span class="w">            </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">gitlab-secret</span>
-<span class="w">            </span><span class="nt">key</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">token</span>
-<span class="w">      </span><span class="nt">projectID</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;**project</span><span class="nv"> </span><span class="s">ID</span><span class="nv"> </span><span class="s">goes</span><span class="nv"> </span><span class="s">here**&quot;</span>
-<span class="w">      </span><span class="nt">groupIDs</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;**groupID(s)</span><span class="nv"> </span><span class="s">go</span><span class="nv"> </span><span class="s">here**&quot;</span>
-<span class="w">      </span><span class="nt">inheritFromGroups</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;**automatically</span><span class="nv"> </span><span class="s">looks</span><span class="nv"> </span><span class="s">for</span><span class="nv"> </span><span class="s">variables</span><span class="nv"> </span><span class="s">in</span><span class="nv"> </span><span class="s">parent</span><span class="nv"> </span><span class="s">groups**&quot;</span>
-<span class="w">      </span><span class="nt">environment</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;**environment</span><span class="nv"> </span><span class="s">scope</span><span class="nv"> </span><span class="s">goes</span><span class="nv"> </span><span class="s">here**&quot;</span>
+<span class="w">        </span><span class="nt">secretRef</span><span class="p">:</span>
+<span class="w">          </span><span class="nt">privateKeySecretRef</span><span class="p">:</span>
+<span class="w">            </span><span class="nt">key</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">user-private-key</span><span class="w"> </span><span class="c1"># name of the key inside Secret resource</span>
+<span class="w">            </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">chef-user-secret</span><span class="w"> </span><span class="c1"># name of Kubernetes Secret resource containing the Chef User&#39;s private key</span>
+<span class="w">            </span><span class="nt">namespace</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">vivid</span><span class="w"> </span><span class="c1"># the namespace in which the above Secret resource resides</span>
 </code></pre></div>
-<strong>NOTE:</strong> In case of a <code>ClusterSecretStore</code>, Be sure to provide <code>namespace</code> in <code>accessToken</code> with the namespace where the secret resides.</p>
-<p>Your project ID can be found on your project's page.
-<img alt="projectID" src="../../pictures/screenshot_gitlab_projectID.png" /></p>
-<h3 id="creating-external-secret">Creating external secret</h3>
-<p>To sync a GitLab variable to a secret on the Kubernetes cluster, a <code>Kind=ExternalSecret</code> is needed.</p>
+<h3 id="creating-secretstore">Creating SecretStore</h3>
+<p>Chef <code>SecretStores</code> are bound to a namespace and can not reference resources across namespaces. For cross-namespace SecretStores, you must use Chef <code>ClusterSecretStores</code>.</p>
+<p>You can follow the below example to create a <code>SecretStore</code> resource.</p>
+<div class="highlight"><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">external-secrets.io/v1beta1</span>
+<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">SecretStore</span>
+<span class="nt">metadata</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">vivid-secretstore</span><span class="w"> </span><span class="c1"># name of SecretStore</span>
+<span class="w">  </span><span class="nt">namespace</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">vivid</span><span class="w"> </span><span class="c1"># must be required for kind: SecretStore</span>
+<span class="nt">spec</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">provider</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">chef</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">username</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">user</span><span class="w"> </span><span class="c1"># Chef User name</span>
+<span class="w">      </span><span class="nt">serverUrl</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://manage.chef.io/organizations/testuser/</span><span class="w"> </span><span class="c1"># Chef server URL</span>
+<span class="w">      </span><span class="nt">auth</span><span class="p">:</span>
+<span class="w">        </span><span class="nt">secretRef</span><span class="p">:</span>
+<span class="w">          </span><span class="nt">privateKeySecretRef</span><span class="p">:</span>
+<span class="w">            </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">chef-user-secret</span><span class="w"> </span><span class="c1"># name of Kubernetes Secret resource containing the Chef User&#39;s private key</span>
+<span class="w">            </span><span class="nt">key</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">user-private-key</span><span class="w"> </span><span class="c1"># name of the key inside Secret resource</span>
+<span class="w">            </span><span class="nt">namespace</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">vivid</span><span class="w"> </span><span class="c1"># the ns where the k8s secret resource containing Chef User&#39;s private key resides</span>
+</code></pre></div>
+<h3 id="creating-externalsecret">Creating ExternalSecret</h3>
+<p>The Chef <code>ExternalSecret</code> describes what data should be fetched from Chef Data bags, and how the data should be transformed and saved as a Kind=Secret.</p>
+<p>You can follow the below example to create an <code>ExternalSecret</code> resource.
 <div class="highlight"><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">external-secrets.io/v1beta1</span>
 <span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ExternalSecret</span>
 <span class="nt">metadata</span><span class="p">:</span>
-<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">gitlab-external-secret-example</span>
+<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">vivid-external-secrets</span><span class="w"> </span><span class="c1"># name of ExternalSecret</span>
+<span class="w">  </span><span class="nt">namespace</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">vivid</span><span class="w"> </span><span class="c1"># namespace inside which the ExternalSecret will be created</span>
+<span class="w">  </span><span class="nt">annotations</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">company/contacts</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">user.a@company.com, user.b@company.com</span>
+<span class="w">    </span><span class="nt">company/team</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">vivid-dev</span>
+<span class="w">  </span><span class="nt">labels</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">app.kubernetes.io/name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">external-secrets</span>
 <span class="nt">spec</span><span class="p">:</span>
-<span class="w">  </span><span class="nt">refreshInterval</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1h</span>
-
+<span class="w">  </span><span class="nt">refreshInterval</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">15m</span>
 <span class="w">  </span><span class="nt">secretStoreRef</span><span class="p">:</span>
-<span class="w">    </span><span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">SecretStore</span>
-<span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">gitlab-secret-store</span><span class="w"> </span><span class="c1"># Must match SecretStore on the cluster</span>
-
-<span class="w">  </span><span class="nt">target</span><span class="p">:</span>
-<span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">gitlab-secret-to-create</span><span class="w"> </span><span class="c1"># Name for the secret to be created on the cluster</span>
-<span class="w">    </span><span class="nt">creationPolicy</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Owner</span>
-
+<span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">vivid-clustersecretstore</span><span class="w"> </span><span class="c1"># name of ClusterSecretStore</span>
+<span class="w">    </span><span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ClusterSecretStore</span>
 <span class="w">  </span><span class="nt">data</span><span class="p">:</span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">secretKey</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">secretKey</span><span class="w"> </span><span class="c1"># Key given to the secret to be created on the cluster</span>
-<span class="w">      </span><span class="nt">remoteRef</span><span class="p">:</span><span class="w"> </span>
-<span class="w">        </span><span class="nt">key</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">myGitlabVariable</span><span class="w"> </span><span class="c1"># Key of the variable on Gitlab</span>
-</code></pre></div>
-<h4 id="using-datafrom">Using DataFrom</h4>
-<p>DataFrom can be used to get a variable as a JSON string and attempt to parse it.</p>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">secretKey</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">USERNAME</span>
+<span class="w">    </span><span class="nt">remoteRef</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">key</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">vivid_prod/global_user</span><span class="w"> </span><span class="c1"># databagName/dataItemName</span>
+<span class="w">      </span><span class="nt">property</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">username</span><span class="w"> </span><span class="c1"># a json key in dataItem</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">secretKey</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">PASSWORD</span>
+<span class="w">    </span><span class="nt">remoteRef</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">key</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">vivid_prod/global_user</span>
+<span class="w">      </span><span class="nt">property</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">password</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">secretKey</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">APIKEY</span>
+<span class="w">    </span><span class="nt">remoteRef</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">key</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">vivid_global/apikey</span>
+<span class="w">      </span><span class="nt">property</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">api_key</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">secretKey</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">APP_PROPERTIES</span>
+<span class="w">    </span><span class="nt">remoteRef</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">key</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">vivid_global/app_properties</span><span class="w"> </span><span class="c1"># databagName/dataItemName , it will fetch all key-vlaues present in the dataItem</span>
+<span class="w">  </span><span class="nt">target</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">vivid-credentials</span><span class="w"> </span><span class="c1"># name of kubernetes Secret resource that will be created and will contain the obtained secrets</span>
+<span class="w">    </span><span class="nt">creationPolicy</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Owner</span>
+<span class="w">    </span><span class="nt">template</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">mergePolicy</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Replace</span><span class="w">    </span>
+<span class="w">      </span><span class="nt">engineVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">v2</span>
+<span class="w">      </span><span class="nt">data</span><span class="p">:</span>
+<span class="w">        </span><span class="nt">secrets.json</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span>
+<span class="w">          </span><span class="no">{</span>
+<span class="w">            </span><span class="no">&quot;username&quot;: &quot;{{ .USERNAME }}&quot;,</span>
+<span class="w">            </span><span class="no">&quot;password&quot;: &quot;{{ .PASSWORD }}&quot;,</span>
+<span class="w">            </span><span class="no">&quot;app_apikey&quot;: &quot;{{ .APIKEY }}&quot;,</span>
+<span class="w">            </span><span class="no">&quot;app_properties&quot;: &quot;{{ .APP_PROPERTIES }}&quot;</span>
+<span class="w">          </span><span class="no">}</span>
+</code></pre></div></p>
+<p>When the above <code>ClusterSecretStore</code> and <code>ExternalSecret</code> resources are created, the <code>ExternalSecret</code> will connect to the Chef Server using the private key and will fetch the data bags contained in the <code>vivid-credentials</code> secret resource.</p>
+<p>To get all data items inside the data bag, you can use the <code>dataFrom</code> directive:
 <div class="highlight"><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">external-secrets.io/v1beta1</span>
 <span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ExternalSecret</span>
 <span class="nt">metadata</span><span class="p">:</span>
-<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">gitlab-external-secret-example</span>
+<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">vivid-external-secrets</span><span class="w"> </span><span class="c1"># name of ExternalSecret</span>
+<span class="w">  </span><span class="nt">namespace</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">vivid</span><span class="w"> </span><span class="c1"># namespace inside which the ExternalSecret will be created</span>
+<span class="w">  </span><span class="nt">annotations</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">company/contacts</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">user.a@company.com, user.b@company.com</span>
+<span class="w">    </span><span class="nt">company/team</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">vivid-dev</span>
+<span class="w">  </span><span class="nt">labels</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">app.kubernetes.io/name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">external-secrets</span>
 <span class="nt">spec</span><span class="p">:</span>
-<span class="w">  </span><span class="nt">refreshInterval</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1h</span>
-
+<span class="w">  </span><span class="nt">refreshInterval</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">15m</span>
 <span class="w">  </span><span class="nt">secretStoreRef</span><span class="p">:</span>
-<span class="w">    </span><span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">SecretStore</span>
-<span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">gitlab-secret-store</span><span class="w"> </span><span class="c1"># Must match SecretStore on the cluster</span>
-
-<span class="w">  </span><span class="nt">target</span><span class="p">:</span>
-<span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">gitlab-secret-to-create</span><span class="w"> </span><span class="c1"># Name for the secret to be created on the cluster</span>
-<span class="w">    </span><span class="nt">creationPolicy</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Owner</span>
-
-<span class="w">  </span><span class="c1"># each secret name in the KV will be used as the secret key in the SECRET k8s target object</span>
+<span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">vivid-clustersecretstore</span><span class="w"> </span><span class="c1"># name of ClusterSecretStore</span>
+<span class="w">    </span><span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ClusterSecretStore</span>
 <span class="w">  </span><span class="nt">dataFrom</span><span class="p">:</span>
 <span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">extract</span><span class="p">:</span>
-<span class="w">      </span><span class="nt">key</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;myJsonVariable&quot;</span><span class="w"> </span><span class="c1"># Key of the variable on Gitlab</span>
-</code></pre></div>
-<h3 id="getting-the-kubernetes-secret">Getting the Kubernetes secret</h3>
-<p>The operator will fetch the project variable and inject it as a <code>Kind=Secret</code>.
-<div class="highlight"><pre><span></span><code>kubectl get secret gitlab-secret-to-create -o jsonpath=&#39;{.data.secretKey}&#39; | base64 -d
+<span class="w">      </span><span class="nt">key</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">vivid_global</span><span class="w"> </span><span class="c1"># only data bag name</span>
+<span class="w">  </span><span class="nt">target</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">vivid_global_all_cred</span><span class="w"> </span><span class="c1"># name of Kubernetes Secret resource that will be created and will contain the obtained secrets</span>
+<span class="w">    </span><span class="nt">creationPolicy</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Owner</span>
 </code></pre></div></p>
+<p>follow : <a href="https://github.com/external-secrets/external-secrets/blob/main/apis/externalsecrets/v1beta1/secretstore_chef_types.go">this file</a> for more info</p>
 
 
 

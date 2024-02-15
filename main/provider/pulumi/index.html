@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../alibaba/">
+        <link rel="prev" href="../delinea/">
       
       
-        <link rel="next" href="../oracle-vault/">
+        <link rel="next" href="../../examples/gitops-using-fluxcd/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>GitLab Variables - External Secrets Operator</title>
+        <title>Pulumi ESC - External Secrets Operator</title>
       
     
     
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#gitlab-variables" class="md-skip">
+        <a href="#pulumi-esc" class="md-skip">
           Skip to content
         </a>
       
@@ -122,7 +122,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              GitLab Variables
+              Pulumi ESC
             
           </span>
         </div>
@@ -2107,28 +2107,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    GitLab Variables
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../gitlab-variables/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2137,99 +2119,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#gitlab-variables" class="md-nav__link">
-    <span class="md-ellipsis">
-      GitLab Variables
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="GitLab Variables">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#configuring-gitlab" class="md-nav__link">
-    <span class="md-ellipsis">
-      Configuring GitLab
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#access-token-secret" class="md-nav__link">
-    <span class="md-ellipsis">
-      Access Token secret
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#configuring-the-secret-store" class="md-nav__link">
-    <span class="md-ellipsis">
-      Configuring the secret store
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#creating-external-secret" class="md-nav__link">
-    <span class="md-ellipsis">
-      Creating external secret
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Creating external secret">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#using-datafrom" class="md-nav__link">
-    <span class="md-ellipsis">
-      Using DataFrom
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#getting-the-kubernetes-secret" class="md-nav__link">
-    <span class="md-ellipsis">
-      Getting the Kubernetes secret
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -2449,10 +2338,28 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../pulumi/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Pulumi ESC
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -2461,6 +2368,81 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pulumi-esc" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pulumi ESC
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pulumi ESC">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#authentication" class="md-nav__link">
+    <span class="md-ellipsis">
+      Authentication
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creating-a-secretstore" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating a SecretStore
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#referencing-secrets" class="md-nav__link">
+    <span class="md-ellipsis">
+      Referencing Secrets
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Referencing Secrets">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      Examples
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -2976,56 +2958,47 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#gitlab-variables" class="md-nav__link">
+  <a href="#pulumi-esc" class="md-nav__link">
     <span class="md-ellipsis">
-      GitLab Variables
+      Pulumi ESC
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="GitLab Variables">
+    <nav class="md-nav" aria-label="Pulumi ESC">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#configuring-gitlab" class="md-nav__link">
+  <a href="#authentication" class="md-nav__link">
     <span class="md-ellipsis">
-      Configuring GitLab
+      Authentication
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#access-token-secret" class="md-nav__link">
+  <a href="#creating-a-secretstore" class="md-nav__link">
     <span class="md-ellipsis">
-      Access Token secret
+      Creating a SecretStore
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#configuring-the-secret-store" class="md-nav__link">
+  <a href="#referencing-secrets" class="md-nav__link">
     <span class="md-ellipsis">
-      Configuring the secret store
+      Referencing Secrets
     </span>
   </a>
   
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#creating-external-secret" class="md-nav__link">
-    <span class="md-ellipsis">
-      Creating external secret
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Creating external secret">
+    <nav class="md-nav" aria-label="Referencing Secrets">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#using-datafrom" class="md-nav__link">
+  <a href="#examples" class="md-nav__link">
     <span class="md-ellipsis">
-      Using DataFrom
+      Examples
     </span>
   </a>
   
@@ -3033,15 +3006,6 @@
         
       </ul>
     </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#getting-the-kubernetes-secret" class="md-nav__link">
-    <span class="md-ellipsis">
-      Getting the Kubernetes secret
-    </span>
-  </a>
   
 </li>
         
@@ -3068,102 +3032,67 @@
   
 
 
-  <h1>GitLab Variables</h1>
+  <h1>Pulumi ESC</h1>
 
-<h2 id="gitlab-variables">GitLab Variables</h2>
-<p>External Secrets Operator integrates with GitLab to sync <a href="https://docs.gitlab.com/ee/api/project_level_variables.html">GitLab Project Variables API</a> and/or <a href="https://docs.gitlab.com/ee/api/group_level_variables.html">GitLab Group Variables API</a> to secrets held on the Kubernetes cluster.</p>
-<h3 id="configuring-gitlab">Configuring GitLab</h3>
-<p>The GitLab API requires an access token, project ID and/or groupIDs.</p>
-<p>To create a new access token, go to your user settings and select 'access tokens'. Give your token a name, expiration date, and select the permissions required (Note 'api' is required).</p>
-<p><img alt="token-details" src="../../pictures/screenshot_gitlab_token.png" /></p>
-<p>Click 'Create personal access token', and your token will be generated and displayed on screen. Copy or save this token since you can't access it again.
-<img alt="token-created" src="../../pictures/screenshot_gitlab_token_created.png" /></p>
-<h3 id="access-token-secret">Access Token secret</h3>
-<p>Create a secret containing your access token:</p>
-<div class="highlight"><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">v1</span>
-<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Secret</span>
-<span class="nt">metadata</span><span class="p">:</span>
-<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">gitlab-secret</span>
-<span class="w">  </span><span class="nt">labels</span><span class="p">:</span><span class="w"> </span>
-<span class="w">    </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">gitlab</span>
-<span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Opaque</span><span class="w"> </span>
-<span class="nt">stringData</span><span class="p">:</span>
-<span class="w">  </span><span class="nt">token</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;**access</span><span class="nv"> </span><span class="s">token</span><span class="nv"> </span><span class="s">goes</span><span class="nv"> </span><span class="s">here**&quot;</span>
-</code></pre></div>
-<h3 id="configuring-the-secret-store">Configuring the secret store</h3>
-<p>Be sure the <code>gitlab</code> provider is listed in the <code>Kind=SecretStore</code> and the ProjectID is set. If you are not using <code>https://gitlab.com</code>, you must set the <code>url</code> field as well.</p>
-<p>In order to sync group variables <code>inheritFromGroups</code> must be true or <code>groupIDs</code> have to be defined.</p>
-<p>In case you have defined multiple environments in Gitlab, the secret store should be constrained to a specific <code>environment_scope</code>.</p>
-<p><div class="highlight"><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">external-secrets.io/v1beta1</span>
+<h2 id="pulumi-esc">Pulumi ESC</h2>
+<p>Sync environments, configs and secrets from <a href="https://www.pulumi.com/product/esc/">Pulumi ESC</a> to Kubernetes using the External Secrets Operator.</p>
+<h3 id="authentication">Authentication</h3>
+<p>Pulumi <a href="https://www.pulumi.com/docs/pulumi-cloud/access-management/access-tokens/">Access Tokens</a> are recommended to access Pulumi ESC.</p>
+<h3 id="creating-a-secretstore">Creating a SecretStore</h3>
+<p>A Pulumi SecretStore can be created by specifying the <code>organization</code> and <code>environment</code> and referencing a Kubernetes secret containing the <code>accessToken</code>.</p>
+<div class="highlight"><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">external-secrets.io/v1beta1</span>
 <span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">SecretStore</span>
 <span class="nt">metadata</span><span class="p">:</span>
-<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">gitlab-secret-store</span>
+<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">secret-store</span>
 <span class="nt">spec</span><span class="p">:</span>
 <span class="w">  </span><span class="nt">provider</span><span class="p">:</span>
-<span class="w">    </span><span class="c1"># provider type: gitlab</span>
-<span class="w">    </span><span class="nt">gitlab</span><span class="p">:</span>
-<span class="w">      </span><span class="c1"># url: https://gitlab.mydomain.com/</span>
-<span class="w">      </span><span class="nt">auth</span><span class="p">:</span>
-<span class="w">        </span><span class="nt">SecretRef</span><span class="p">:</span>
-<span class="w">          </span><span class="nt">accessToken</span><span class="p">:</span>
-<span class="w">            </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">gitlab-secret</span>
-<span class="w">            </span><span class="nt">key</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">token</span>
-<span class="w">      </span><span class="nt">projectID</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;**project</span><span class="nv"> </span><span class="s">ID</span><span class="nv"> </span><span class="s">goes</span><span class="nv"> </span><span class="s">here**&quot;</span>
-<span class="w">      </span><span class="nt">groupIDs</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;**groupID(s)</span><span class="nv"> </span><span class="s">go</span><span class="nv"> </span><span class="s">here**&quot;</span>
-<span class="w">      </span><span class="nt">inheritFromGroups</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;**automatically</span><span class="nv"> </span><span class="s">looks</span><span class="nv"> </span><span class="s">for</span><span class="nv"> </span><span class="s">variables</span><span class="nv"> </span><span class="s">in</span><span class="nv"> </span><span class="s">parent</span><span class="nv"> </span><span class="s">groups**&quot;</span>
-<span class="w">      </span><span class="nt">environment</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;**environment</span><span class="nv"> </span><span class="s">scope</span><span class="nv"> </span><span class="s">goes</span><span class="nv"> </span><span class="s">here**&quot;</span>
+<span class="w">    </span><span class="nt">pulumi</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">organization</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">&lt;NAME_OF_THE_ORGANIZATION&gt;</span>
+<span class="w">      </span><span class="nt">environment</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">&lt;NAME_OF_THE_ENVIRONMENT&gt;</span>
+<span class="w">      </span><span class="nt">accessToken</span><span class="p">:</span>
+<span class="w">        </span><span class="nt">secretRef</span><span class="p">:</span>
+<span class="w">          </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">&lt;NAME_OF_KUBE_SECRET&gt;</span>
+<span class="w">          </span><span class="nt">key</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">&lt;KEY_IN_KUBE_SECRET&gt;</span>
 </code></pre></div>
-<strong>NOTE:</strong> In case of a <code>ClusterSecretStore</code>, Be sure to provide <code>namespace</code> in <code>accessToken</code> with the namespace where the secret resides.</p>
-<p>Your project ID can be found on your project's page.
-<img alt="projectID" src="../../pictures/screenshot_gitlab_projectID.png" /></p>
-<h3 id="creating-external-secret">Creating external secret</h3>
-<p>To sync a GitLab variable to a secret on the Kubernetes cluster, a <code>Kind=ExternalSecret</code> is needed.</p>
+<p>If required, the API URL (<code>apiUrl</code>) can be customized as well. If not specified, the default value is <code>https://api.pulumi.com</code>.</p>
+<h3 id="referencing-secrets">Referencing Secrets</h3>
+<p>Secrets can be referenced by defining the <code>key</code> containing the JSON path to the secret. Pulumi ESC secrets are internally organized as a JSON object.</p>
 <div class="highlight"><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">external-secrets.io/v1beta1</span>
 <span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ExternalSecret</span>
 <span class="nt">metadata</span><span class="p">:</span>
-<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">gitlab-external-secret-example</span>
+<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">secret</span>
 <span class="nt">spec</span><span class="p">:</span>
-<span class="w">  </span><span class="nt">refreshInterval</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1h</span>
-
+<span class="w">  </span><span class="nt">refreshInterval</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">20s</span>
 <span class="w">  </span><span class="nt">secretStoreRef</span><span class="p">:</span>
 <span class="w">    </span><span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">SecretStore</span>
-<span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">gitlab-secret-store</span><span class="w"> </span><span class="c1"># Must match SecretStore on the cluster</span>
-
-<span class="w">  </span><span class="nt">target</span><span class="p">:</span>
-<span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">gitlab-secret-to-create</span><span class="w"> </span><span class="c1"># Name for the secret to be created on the cluster</span>
-<span class="w">    </span><span class="nt">creationPolicy</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Owner</span>
-
+<span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">secret-store</span>
 <span class="w">  </span><span class="nt">data</span><span class="p">:</span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">secretKey</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">secretKey</span><span class="w"> </span><span class="c1"># Key given to the secret to be created on the cluster</span>
-<span class="w">      </span><span class="nt">remoteRef</span><span class="p">:</span><span class="w"> </span>
-<span class="w">        </span><span class="nt">key</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">myGitlabVariable</span><span class="w"> </span><span class="c1"># Key of the variable on Gitlab</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">secretKey</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">&lt;KEY_IN_KUBE_SECRET&gt;</span>
+<span class="w">    </span><span class="nt">remoteRef</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">key</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">&lt;PULUMI_PATH_SYNTAX&gt;</span>
 </code></pre></div>
-<h4 id="using-datafrom">Using DataFrom</h4>
-<p>DataFrom can be used to get a variable as a JSON string and attempt to parse it.</p>
-<div class="highlight"><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">external-secrets.io/v1beta1</span>
-<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ExternalSecret</span>
-<span class="nt">metadata</span><span class="p">:</span>
-<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">gitlab-external-secret-example</span>
-<span class="nt">spec</span><span class="p">:</span>
-<span class="w">  </span><span class="nt">refreshInterval</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1h</span>
-
-<span class="w">  </span><span class="nt">secretStoreRef</span><span class="p">:</span>
-<span class="w">    </span><span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">SecretStore</span>
-<span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">gitlab-secret-store</span><span class="w"> </span><span class="c1"># Must match SecretStore on the cluster</span>
-
-<span class="w">  </span><span class="nt">target</span><span class="p">:</span>
-<span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">gitlab-secret-to-create</span><span class="w"> </span><span class="c1"># Name for the secret to be created on the cluster</span>
-<span class="w">    </span><span class="nt">creationPolicy</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Owner</span>
-
-<span class="w">  </span><span class="c1"># each secret name in the KV will be used as the secret key in the SECRET k8s target object</span>
-<span class="w">  </span><span class="nt">dataFrom</span><span class="p">:</span>
-<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">extract</span><span class="p">:</span>
-<span class="w">      </span><span class="nt">key</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;myJsonVariable&quot;</span><span class="w"> </span><span class="c1"># Key of the variable on Gitlab</span>
-</code></pre></div>
-<h3 id="getting-the-kubernetes-secret">Getting the Kubernetes secret</h3>
-<p>The operator will fetch the project variable and inject it as a <code>Kind=Secret</code>.
-<div class="highlight"><pre><span></span><code>kubectl get secret gitlab-secret-to-create -o jsonpath=&#39;{.data.secretKey}&#39; | base64 -d
-</code></pre></div></p>
+<p><strong>Note:</strong> <code>key</code> is not following the JSON Path syntax, but rather the Pulumi path syntax.</p>
+<h4 id="examples">Examples</h4>
+<ul>
+<li>root</li>
+<li>root.nested</li>
+<li>root["nested"]</li>
+<li>root.double.nest</li>
+<li>root["double"].nest</li>
+<li>root["double"]["nest"]</li>
+<li>root.array[0]</li>
+<li>root.array[100]</li>
+<li>root.array[0].nested</li>
+<li>root.array[0][1].nested</li>
+<li>root.nested.array[0].double[1]</li>
+<li>root["key with \"escaped\" quotes"]</li>
+<li>root["key with a ."]</li>
+<li>["root key with \"escaped\" quotes"].nested</li>
+<li>["root key with a ."][100]</li>
+<li>root.array[*].field</li>
+<li>root.array["*"].field</li>
+</ul>
+<p>See <a href="https://www.pulumi.com/docs/concepts/options/ignorechanges/">Pulumi's documentation</a> for more information.</p>
 
 
 
