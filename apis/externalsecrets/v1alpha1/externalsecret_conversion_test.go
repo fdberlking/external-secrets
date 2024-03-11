@@ -26,6 +26,7 @@ import (
 
 const (
 	keyName = "my-key"
+	target  = "test-target"
 )
 
 func newExternalSecretV1Alpha1() *ExternalSecret {
@@ -45,7 +46,7 @@ func newExternalSecretV1Alpha1() *ExternalSecret {
 				},
 			},
 			Binding: corev1.LocalObjectReference{
-				Name: "test-target",
+				Name: target,
 			},
 		},
 		Spec: ExternalSecretSpec{
@@ -54,7 +55,7 @@ func newExternalSecretV1Alpha1() *ExternalSecret {
 				Kind: "ClusterSecretStore",
 			},
 			Target: ExternalSecretTarget{
-				Name:           "test-target",
+				Name:           target,
 				CreationPolicy: Owner,
 				Immutable:      false,
 				Template: &ExternalSecretTemplate{
@@ -130,7 +131,7 @@ func newExternalSecretV1Beta1() *esv1beta1.ExternalSecret {
 				},
 			},
 			Binding: corev1.LocalObjectReference{
-				Name: "test-target",
+				Name: target,
 			},
 		},
 		Spec: esv1beta1.ExternalSecretSpec{
@@ -139,7 +140,7 @@ func newExternalSecretV1Beta1() *esv1beta1.ExternalSecret {
 				Kind: "ClusterSecretStore",
 			},
 			Target: esv1beta1.ExternalSecretTarget{
-				Name:           "test-target",
+				Name:           target,
 				CreationPolicy: esv1beta1.CreatePolicyOwner,
 				Immutable:      false,
 				Template: &esv1beta1.ExternalSecretTemplate{
